@@ -25,6 +25,10 @@ const config: Config = {
         'grayTone2': '#6C768A',
         'grayTone3': '#A0ABC0',
         'textDarkTone': '#23252F',
+
+        'background-white': '#F6F6F8',
+        'logo-yellow':'#F69319',
+        'white-layout': '#E5EAF0CC',
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
@@ -68,6 +72,18 @@ const config: Config = {
       },
     },
     screens: {
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+      
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '3xl': {'max': '1600px'},
+      // => @media (max-width: 1600px) { ... }
+
       '2xl': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
 
@@ -82,6 +98,9 @@ const config: Config = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+
+      'xs': {'max': '475px'},
+      // => @media (max-width: 475px) { ... }
     },
   },
   plugins: [],
